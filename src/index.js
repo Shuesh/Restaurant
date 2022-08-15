@@ -43,3 +43,9 @@ function addListeners() {
 }
 
 addListeners();
+
+window.onload = function() {
+    const homeTab = document.querySelector("#home");
+    homeTab.classList.add('selected');
+    home();
+}

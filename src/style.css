@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -25,8 +26,8 @@ header {
 }
 
 .tabs {
-    background-color: #427aa1;
-    color: white;
+    color: #ebf2fa;
+    background-color: #05668d;
     font-weight: 600;
 
     border: 2px solid #ebf2fa;
@@ -34,10 +35,10 @@ header {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 
+    text-align: center;
     height: 70%;
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 120px;
+    padding: 15px 20px;
     font-size: 1.1rem;
 }
 
@@ -46,23 +47,57 @@ header {
 }
 
 .selected {
-    color: #05668d;
+    color: #427aa1;
     background-color: #ebf2fa;
-    border-color: #05668d;
+    border-color: #427aa1;
 }
 
 
 
 
 /* Content styling */
-
-#content {
+#main {
     background-color: #ebf2fa;
+    background-image: url("./assets/atom.jpg");
+    background-repeat: round;
+
 
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+#content {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #ebf2fa;
+
+    border: 2px solid #a5be00;
+    border-top: none;
+    border-bottom: none;
+}
+
+.card {
+    background-color: #427aa1;
+    
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+}
+
+.card ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
 }
 
 
